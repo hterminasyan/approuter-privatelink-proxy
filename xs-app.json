@@ -7,6 +7,6 @@
         "destination": "BusinessPartner-approuter",
         "authenticationType": "xsuaa",
         "csrfProtection": false
-      }
+    }
   ]
 }
