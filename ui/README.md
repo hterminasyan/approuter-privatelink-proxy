@@ -9,7 +9,7 @@
 |**Service Type**<br>File|
 |**Metadata File**<br>$metadata.xml
 |**Module Name**<br>ui|
-|**Application Title**<br>Plink Fiori|
+|**Application Title**<br>PrivateLink Fiori|
 |**Namespace**<br>plinkfioriui|
 |**UI5 Theme**<br>sap_fiori_3|
 |**UI5 Version**<br>1.102.1|
