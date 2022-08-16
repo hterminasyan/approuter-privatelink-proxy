@@ -7,3 +7,11 @@ With the help of the SAP Private Link service, you can extend your hybrid integr
 The main idea of this architecture is to use the Application Router as a proxy for the private connectivity between SAP S/4HANA and SAP Cloud Integration. The detailed configuration steps you can follow here.
 
 ![solution diagram](../img/approuter-cloudintegration.png)
+
+
+After setting up the route with destination and authentication, you can deploy the Application Router to your SAP BTP subaccount 
+```json
+e.g. by  mbt build and cf deploy privatelink-proxy.mtar 
+```
+
+Once the Application Router is up and running, it can be used by your integration flows or Fiori applications to connect with the SAP backend system. 
