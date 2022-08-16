@@ -4,6 +4,8 @@ SAP Launchpad service plays an important role to increase users’ productivity 
 
 The frontend extensions of your SAP S/4HANA system running on SAP BTP can now also benefit from the new SAP Private Link service by establishing private connectivity to your SAP backend systems.  
 
+>Please note that this scenario covers only the frontend extensions. The federated SAP S/4HANA content is out of scope.  
+
 The main idea of this architecture is to use the Application Router as a proxy for the private connectivity between SAP S/4HANA and frontend extensions running on SAP BTP. The configuration steps you can find below.
 
 ![solution diagram](../img/approuter-launchpad.png)
