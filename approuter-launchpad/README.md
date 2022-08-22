@@ -55,7 +55,7 @@ Please also add the **flp configuration**, so we can later register our applicat
 
 ## Expose the application as a content provider for the SAP Launchpad service
 
-To expose our app with **Standalone Application Router** as a Content Provider for SAP Launchpad service, a couple of further steps are required. 
+To expose our app with a **Standalone Application Router** as a Content Provider for SAP Launchpad service, a couple of further steps are required. 
 First of all, we need to change the app settings to a multitenant application by using the saas-registry service. Then we can subscribe to the application and add the app to SAP Launchpad Service. Please follow the [help documentation](https://help.sap.com/docs/Portal_Service/ad4b9f0b14b0458cad9bd27bf435637d/8a25fddb747f4ba992969049de96f836.html?locale=en-US) or have a look at the provided [sample application](mta.yaml).
 
 >Note: This step is required since we are not using the Managed Application Router

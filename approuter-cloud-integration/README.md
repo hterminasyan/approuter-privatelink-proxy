@@ -4,7 +4,7 @@ The SAP Cloud Integration capability of SAP Integration Suite enables enterprise
 
 With the help of the SAP Private Link service, you can extend your hybrid integration scenarios to suit stricter security policies and communicate with your SAP S/4HANA on Microsoft Azure through private network connectivity. 
 
-The main idea of this architecture is to use the Application Router as a proxy for the private connectivity between SAP S/4HANA and SAP Cloud Integration. The detailed configuration steps you can follow here.
+The main idea of this architecture is to use the Application Router as a proxy for the private connectivity between SAP S/4HANA and SAP Cloud Integration. Detailed configuration steps you can find below.
 
 >Please note that for the moment, we cannot use SAP Private Link service directly from SAP Cloud Integration; nevertheless, we can bridge this gap with help of SAP’s Application Router (approuter), which can play the role of a proxy between SAP Private Link service and SAP Cloud Integration, meanwhile product team is working to enable direct integration.
 
@@ -46,7 +46,7 @@ e.g. by  mbt build and cf deploy privatelink-proxy.mtar
 
 Once the Application Router is up and running, it can be used by your integration flows to connect with the SAP backend system. 
 
-## Use the approuter proxy in SAP Cloud Integration iFlows
+## Use the Application Router proxy in SAP Cloud Integration iFlows
 
 All your standard integration patterns can stay the same, you need to add a couple of additional steps to use the approuter proxy with the private link connectivity to your SAP backend system.
 
@@ -56,7 +56,7 @@ To showcase the scenario, in my example I’m simply calling one of the standard
 
 Following additional steps are required:
 
-1.	Get the access token from the XSUAA component of approuter. Please maintain the *client_id* and *client_secret* of XSUAA component as **"User Credentials"** in **Security Material** of SAP Cloud Integration
+1.	Get the access token from the XSUAA component of approuter. Please maintain the *client_id* and *client_secret* of XSUAA component as **"User Credentials"** in the **Security Material** of SAP Cloud Integration
 
  ![iflow xsuaa connection](../img/iflow-connection.png)
 
@@ -76,7 +76,7 @@ Having all these steps in place, you can deploy the integration flow and test it
 
 The example iFlow configuration you can get [here](iflow/PrivateLinkProxy.zip) and import to your SAP Cloud Integration tenant.
 
-Go to your Cloud Integration cockpit and **import** the above provided package.
+Go to your Cloud Integration cockpit and **import** the above-provided package.
 
   ![iflow import](../img/iflow-import.png)
 
@@ -88,7 +88,7 @@ Open the integration flow
 
   ![iflow import](../img/iflow-open.png)
 
-Configure the parameters based on your tennat
+Configure the parameters based on your tenant
 
   ![iflow import](../img/iflow-configure.png)
 
@@ -108,7 +108,7 @@ After deployment you can run your integration flow based on SAP Private Link con
 
 ## Summary
 
-Congratulations, you successfully connected your hybrid integration flow with SAP Private Link service
+Congratulations, you successfully connected your hybrid integration flow with the SAP Private Link service
 
 
 
